@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Komikta</string>
+    <string name="tagline">Baca cerita, temukan dunia.</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="library">Library</string>
+    <string name="profile">Profile</string>
+    <string name="search">Cari</string>
+    <string name="see_all">Lihat semua</string>
+    <string name="recommendations">Pilihan untukmu</string>
+    <string name="latest_updates">Update terbaru</string>
+    <string name="continue_reading">Lanjutkan baca</string>
+    <string name="bookmarks">Bookmark</string>
+    <string name="history">Riwayat baca</string>
+    <string name="read">Baca</string>
+    <string name="details">Detail</string>
+    <string name="retry">Coba lagi</string>
+    <string name="empty_library">Belum ada bookmark</string>
+    <string name="empty_history">Belum ada riwayat baca</string>
+    <string name="empty_search">Tidak ada hasil</string>
+    <string name="error_network">Gagal terhubung ke server</string>
+    <string name="clear_history">Hapus riwayat</string>
+    <string name="about">Tentang Komikta</string>
+    <string name="version">Versi 1.0.0</string>
+</resources>

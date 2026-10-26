@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Image proxy may return http URLs; allow cleartext only for the known host -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">tets-server-production.up.railway.app</domain>
+    </domain-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
