@@ -1,7 +1,7 @@
 package com.komikta.app.di
 
 import androidx.room.Room
-import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
+import retrofit2.converter.kotlinx.serialization.asConverterFactory
 import com.komikta.app.BuildConfig
 import com.komikta.app.data.local.database.AppDatabase
 import com.komikta.app.data.remote.api.ManhwaApi

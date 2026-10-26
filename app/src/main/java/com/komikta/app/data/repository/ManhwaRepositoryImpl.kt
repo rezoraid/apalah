@@ -15,6 +15,7 @@ import com.komikta.app.domain.model.Genre
 import com.komikta.app.domain.model.HomeContent
 import com.komikta.app.domain.repository.ManhwaRepository
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 
 class ManhwaRepositoryImpl(
@@ -112,10 +113,10 @@ class ManhwaRepositoryImpl(
         bookmarkDao.isBookmarked(comicId)
 
     override suspend fun toggleBookmark(comic: Comic) {
-        val exists = bookmarkDao.isBookmarked(comic.id)
-        // simple check via one-shot would be better; use insert/delete
-        // for simplicity we delete then decide externally, but implement toggle:
-        // We'll expose add/remove instead in practice; here:
+        if (bookmarkDao.isBookmarked(comic.id).first()) {
+            bookmarkDao.delete(comic.id)
+            return
+        }
         bookmarkDao.insert(
             BookmarkEntity(
                 comicId = comic.id,
