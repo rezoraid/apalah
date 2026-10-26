@@ -148,8 +148,8 @@ fun LoadingState(modifier: Modifier = Modifier) {
 @Composable
 fun ErrorState(
     message: String,
-    onRetry: () -> Unit,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    onRetry: () -> Unit = {}
 ) {
     Column(
         modifier = modifier
